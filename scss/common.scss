@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+//Primary
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$head:hsl(234, 12%, 34%);
+
+//Neutral
+$Very_Light_Gray: hsl(0, 0%, 98%);
+$Grayish_Blue: hsl(229, 6%, 66%);
+$Very_Light_Gray: hsl(0, 0%, 98%);
+*{
+    font-family: poppins;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-color: $Very_Light_Gray;
+}
+.container{
+width: 100vw;
+ padding: 30px 30px;
+    .top-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .head1{
+            h2{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 200;
+                color: $head;
+            }
+        }
+        .head2{
+            @extend.head1;
+            h2{
+                font-weight: 600;
+            }
+        }
+        .head3{
+            @extend.head1;
+            width: 29%;
+            text-align: center;
+            p{
+                
+                color:$Grayish_Blue;
+            }
+        }
+          
+        @media only screen and (max-width: 375px)
+        {
+         .head1{
+             h2{
+                 font-size: 25px;
+             }
+         }
+         .head3{
+             width: 100%;
+         }
+            
+        }  
+    }
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 3rem auto;
+        .left-content{
+            width: 400px;
+            margin-bottom: 15px;
+              padding: 20px 20px;
+              border-top: 5px solid $Cyan;
+              border-radius: 5px;
+              box-shadow: rgba(66, 178, 196, 0.137) 0px 50px 100px -20px, rgba(150, 137, 137, 0.178) 0px 30px 60px -30px;
+              .sup-info{
+                 
+               h2{
+                color: $head;
+               }
+               p{
+                   color:$Grayish_Blue ;
+                   padding: 5px 0px;
+                   font-size: 12px;
+               }
+              }
+              .sup-img{
+             text-align: right;
+             padding: 30px 0px;
+              }
+        }
+        .center-content{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .team-build{
+                width: 100%;
+                @extend.left-content;
+                margin-bottom: 0px;
+            border-top: 5px solid $Red;
+            .team-info{
+                @extend.sup-info;
+            }
+            .team-img{
+                @extend.sup-img;
+            }
+            }
+        
+        }
+         .karma{
+            width: 100%;
+             margin: 15px 0px;
+             @extend.left-content;
+             border-top: 5px solid $Orange;
+             .karma-info{
+                 @extend.sup-info;
+             }
+             .karma-img{
+                 @extend.sup-img;
+             }
+         }
+        .right-content{
+            width: 400px;
+            align-items: left;
+            @extend.left-content;
+            border-top: 5px solid $Cyan;
+            .cal-info{
+                @extend.sup-info;
+            }
+            .cal-img{
+                @extend.sup-img;
+            } 
+        }
+
+        @media only screen and (max-width: 375px)
+        {
+            width: 95%;
+
+        }
+      
+    }
+
+}

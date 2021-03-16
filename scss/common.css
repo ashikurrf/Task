@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  font-family: poppins;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100vw;
+  padding: 30px 30px;
+}
+
+.container .top-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .top-info .head1 h2, .container .top-info .head2 h2, .container .top-info .head3 h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+.container .top-info .head2 h2 {
+  font-weight: 600;
+}
+
+.container .top-info .head3 {
+  width: 29%;
+  text-align: center;
+}
+
+.container .top-info .head3 p {
+  color: #a3a5ae;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .top-info .head1 h2, .container .top-info .head2 h2, .container .top-info .head3 h2 {
+    font-size: 25px;
+  }
+  .container .top-info .head3 {
+    width: 100%;
+  }
+}
+
+.container .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.container .main-content .left-content, .container .main-content .center-content .team-build, .container .main-content .karma, .container .main-content .right-content {
+  width: 400px;
+  margin-bottom: 15px;
+  padding: 20px 20px;
+  border-top: 5px solid #45d3d3;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(66, 178, 196, 0.137) 0px 50px 100px -20px, rgba(150, 137, 137, 0.178) 0px 30px 60px -30px;
+          box-shadow: rgba(66, 178, 196, 0.137) 0px 50px 100px -20px, rgba(150, 137, 137, 0.178) 0px 30px 60px -30px;
+}
+
+.container .main-content .left-content .sup-info h2, .container .main-content .center-content .team-build .sup-info h2, .container .main-content .karma .sup-info h2, .container .main-content .right-content .sup-info h2, .container .main-content .center-content .team-build .team-info h2, .container .main-content .karma .karma-info h2, .container .main-content .right-content .cal-info h2 {
+  color: #4c4e61;
+}
+
+.container .main-content .left-content .sup-info p, .container .main-content .center-content .team-build .sup-info p, .container .main-content .karma .sup-info p, .container .main-content .right-content .sup-info p, .container .main-content .center-content .team-build .team-info p, .container .main-content .karma .karma-info p, .container .main-content .right-content .cal-info p {
+  color: #a3a5ae;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+
+.container .main-content .left-content .sup-img, .container .main-content .center-content .team-build .sup-img, .container .main-content .karma .sup-img, .container .main-content .right-content .sup-img, .container .main-content .center-content .team-build .team-img, .container .main-content .karma .karma-img, .container .main-content .right-content .cal-img {
+  text-align: right;
+  padding: 30px 0px;
+}
+
+.container .main-content .center-content {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .main-content .center-content .team-build {
+  width: 100%;
+  margin-bottom: 0px;
+  border-top: 5px solid #ea5353;
+}
+
+.container .main-content .karma {
+  width: 100%;
+  margin: 15px 0px;
+  border-top: 5px solid #fcaf4a;
+}
+
+.container .main-content .right-content {
+  width: 400px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  border-top: 5px solid #45d3d3;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .main-content {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=common.css.map */
